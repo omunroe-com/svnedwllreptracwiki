@@ -9,7 +9,7 @@
   history and logs, available at http://trac.edgewall.org/.
 #}
 
-# extends "jlayout.html"
+# extends 'layout.html'
 
 <!DOCTYPE html>
 <html>
@@ -160,7 +160,7 @@
       # endif
 
       # if not sidebyside:
-      #   include "jwiki_edit_form.html"
+      #   include 'wiki_edit_form.html'
       # endif
 
       # if merge:
@@ -234,7 +234,7 @@
           # if diff:
           <div class="diff">
             # with no_id = true
-            #   include "jdiff_div.html"
+            #   include 'diff_div.html'
             # endwith
           </div>
           # else:
@@ -254,11 +254,11 @@
       # endif
 
       # if sidebyside:
-      #   include "jwiki_edit_form.html"
+      #   include 'wiki_edit_form.html'
       # endif
 
       # with alist = attachments, compact = true, foldable = true
-      #   include "jlist_of_attachments.html"
+      #   include 'list_of_attachments.html'
       # endwith
     </div>
     ${ super() }

@@ -8,7 +8,7 @@
   individuals. For the exact contribution history, see the revision
   history and logs, available at http://trac.edgewall.org/.
 #}
-# extends "jlayout.html"
+# extends 'layout.html'
 <!DOCTYPE html>
 <html>
   <head>
@@ -129,7 +129,7 @@
       #   set alist = attachments
       #   set compact = True
       #   set foldable = True
-      #   include "jlist_of_attachments.html"
+      #   include 'list_of_attachments.html'
       # endwith
 
       # with
@@ -171,7 +171,7 @@
 
         #     if page.exists:
         #       with alist = attachments
-        #         include "jattach_file_form.html"
+        #         include 'attach_file_form.html'
         #       endwith
         #     endif
         #   endif
